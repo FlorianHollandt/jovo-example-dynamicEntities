@@ -1,0 +1,68 @@
+{
+	"invocation": "my test app",
+	"intents": [
+		{
+			"name": "HelloWorldIntent",
+			"phrases": [
+				"hello",
+				"say hello",
+				"say hello world"
+			]
+		},
+		{
+			"name": "MyNameIsIntent",
+			"phrases": [
+				"{name}",
+				"my name is {name}",
+				"i am {name}",
+				"you can call me {name}"
+			],
+			"inputs": [
+				{
+					"name": "name",
+					"type": "PERSON_NAME_TYPE"
+				}
+			]
+		},
+		{
+			"name": "AMAZON.StopIntent",
+			"phrases": [
+				"stop"
+			]
+		},
+		{
+			"name": "AMAZON.CancelIntent",
+			"phrases": [
+				"cancel"
+			]
+		}
+	],
+	"inputTypes": [
+		{
+			"name": "PERSON_NAME_TYPE",
+			"values": [
+				{
+					"value": "James"
+				},
+				{
+					"value": "John"
+				},
+				{
+					"value": "Robert"
+				},
+				{
+					"value": "Michael"
+				},
+				{
+					"value": "Peter"
+				},
+				{
+					"value": "Clark"
+				},
+				{
+					"value": "Bruce"
+				}
+			]
+		}
+	]
+}
