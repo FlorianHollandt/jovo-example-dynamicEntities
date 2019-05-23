@@ -2,8 +2,7 @@
 
 const hook = (error, host, jovo) => {
   if (jovo.isAlexaSkill()) {
-    if (jovo.isLaunchRequest()) {
-    // if (jovo.isNewSession()) {
+    if (jovo.isNewSession()) {
       jovo.$alexaSkill.addDirective({
         type: 'Dialog.UpdateDynamicEntities',
         updateBehavior: 'REPLACE',
